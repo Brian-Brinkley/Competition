@@ -15,6 +15,8 @@ void auton() {
         wait(2,seconds);
         MotorGroup2.stop(coast);
         errorDrive.errorDist(-50,800);
+        Drivetrain.turnToHeading(85, degrees);
+        errorDrive.errorDist(20,30);
         MotorGroup2.spin(reverse,80,percent);
         wait(2,seconds);
         MotorGroup2.stop(coast);
