@@ -9,7 +9,7 @@
 #include "robot-config.h"
 #include "errorDrive.h"
 #include "auton-selector.h"
-
+#include "test.h"
 
 #define waitUntil(condition)                                                   \
   do {                                                                         \

@@ -10,7 +10,7 @@
 
 using namespace vex;
 
-
+bool chosen = false;
 bool firstPress = false;
 bool finalPress = false;
 bool leftRight;
@@ -47,5 +47,10 @@ void auton_selector() {
         wait(2,seconds);
         Brain.Screen.clearScreen();
         Brain.Screen.setCursor(1,1);
+        selection.pressed(testFunc);
+        return;
+    }
+    else {
+        return;
     }
 }

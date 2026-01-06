@@ -17,6 +17,7 @@ competition Competition;
 void pre_auton(void) {
     calibrateDrivetrain();
     selection.pressed(auton_selector);
+
     LeftDriveSmart.setPosition(0,degrees);
     RightDriveSmart.setPosition(0,degrees);
 }
